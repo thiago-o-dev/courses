@@ -4,26 +4,23 @@ size: 16:9
 class: invert 
 ---
 # <!--fit-->Introdução a programação de jogos
-
+## Aula 1
 ---
+
 ## Ementa da aula
 - Ferramentas que serão utilizadas no curso.
 - Diferenças entre game engines.
 - Entender a base da programação orientada a objetos em jogos.
 - Similaridades entre desenvolvimento de jogos e desenvolvimento BackEnd.
+- Herança vs Componentização
+- Introdução a sinais/eventos
 ---
 
 # Ferramentas do curso
 * **Godot** para game engine
-* **PlantUML** para visualização de gráficos (opcional)
+* Assets da **itch.io**
 
----
-# Aulas e códigos **disponiveis** no github: 
-## <!--fit--> https://github.com/thiago-o-dev/courses
-* (me sigam lá)
-# Site buildado:
-## <!--fit--> https://thiago-o-dev.github.io/courses/
-
+###### Todos os assets tem créditos no arquivo README.md mais próximo!
 ---
 
 # <!--fit-->Diferenças entre game engines
@@ -121,3 +118,12 @@ class: invert
 ---
 
 # <!--fit-->Vamos ver **na prática**.
+
+---
+
+# Aulas e códigos **disponiveis** no github: 
+## <!--fit--> https://github.com/thiago-o-dev
+- (me sigam lá)
+# Site buildado:
+## <!--fit--> https://thiago-o-dev.github.io/courses/
+
