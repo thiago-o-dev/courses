@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bs1dxrk0ibj6c" path="res://assets/map.tscn" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://b0xrffd0q6frf" path="res://assets/entities/main_character.tscn" id="2_sugp2"]
-[ext_resource type="Script" uid="uid://c4nsah4ygq5lv" path="res://src/components/interactable_component.gd" id="3_sugp2"]
+[ext_resource type="Script" uid="uid://bf8ahfa87fpmn" path="res://src/implementations/island_1_interactable_component.gd" id="3_sugp2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jyhfs"]
 radius = 12.0
@@ -15,10 +15,14 @@ y_sort_enabled = true
 [node name="MainCharacter" parent="." unique_id=1244089106 instance=ExtResource("2_sugp2")]
 position = Vector2(367, 59)
 
-[node name="InteractableComponent" type="Area2D" parent="." unique_id=900287326]
+[node name="Island1InteractableComponent" type="Area2D" parent="." unique_id=900287326 node_paths=PackedStringArray("tp_marker")]
 position = Vector2(416, 26)
 script = ExtResource("3_sugp2")
+tp_marker = NodePath("Island1TpMarker")
 metadata/_custom_type_script = "uid://c4nsah4ygq5lv"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent" unique_id=1482653097]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Island1InteractableComponent" unique_id=1482653097]
 shape = SubResource("CircleShape2D_jyhfs")
+
+[node name="Island1TpMarker" type="Marker2D" parent="Island1InteractableComponent" unique_id=837291181]
+position = Vector2(992, -28)
