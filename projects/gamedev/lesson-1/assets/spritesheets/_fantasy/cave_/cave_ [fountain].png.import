@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf0c5ojf5k6hp"
-path="res://.godot/imported/forest_ [fountain].png-805b231c3655ad9064418b630611e561.ctex"
+uid="uid://dtddsmh6wb22d"
+path="res://.godot/imported/cave_ [fountain].png-4cc7f96bddcc8bf6e4ba039ce481f9e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/forest_/forest_ [fountain].png"
-dest_files=["res://.godot/imported/forest_ [fountain].png-805b231c3655ad9064418b630611e561.ctex"]
+source_file="res://assets/spritesheets/_fantasy/cave_/cave_ [fountain].png"
+dest_files=["res://.godot/imported/cave_ [fountain].png-4cc7f96bddcc8bf6e4ba039ce481f9e5.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqmtmsq63xrne"
-path="res://.godot/imported/forest_ [resources].png-e37ae4a27fa497eb5c6067b3415d1c27.ctex"
+uid="uid://ckebno5in70hq"
+path="res://.godot/imported/cave_ [bridgeHorizontal].png-455a8a0b78a44456525243e57bebd962.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/forest_/forest_ [resources].png"
-dest_files=["res://.godot/imported/forest_ [resources].png-e37ae4a27fa497eb5c6067b3415d1c27.ctex"]
+source_file="res://assets/spritesheets/_fantasy/cave_/cave_ [bridgeHorizontal].png"
+dest_files=["res://.godot/imported/cave_ [bridgeHorizontal].png-455a8a0b78a44456525243e57bebd962.ctex"]
 
 [params]
 

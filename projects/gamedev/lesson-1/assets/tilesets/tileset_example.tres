@@ -1,10 +1,10 @@
 [gd_resource type="TileSet" format=3 uid="uid://dac13bmkj3sym"]
 
-[ext_resource type="Texture2D" uid="uid://c076rjavtfkcw" path="res://assets/forest_/forest_.png" id="1_27apg"]
-[ext_resource type="Texture2D" uid="uid://cqmtmsq63xrne" path="res://assets/forest_/forest_ [resources].png" id="2_faq5g"]
+[ext_resource type="Texture2D" uid="uid://c076rjavtfkcw" path="res://assets/spritesheets/_fantasy/forest_/forest_.png" id="1_8o463"]
+[ext_resource type="Texture2D" uid="uid://cqmtmsq63xrne" path="res://assets/spritesheets/_fantasy/forest_/forest_ [resources].png" id="2_42smp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h8jnn"]
-texture = ExtResource("1_27apg")
+texture = ExtResource("1_8o463")
 1:1/0 = 0
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 4, 4, 4, 4, 8, 0, 8, 0, 0, 8, 0)
 2:1/0 = 0
@@ -425,7 +425,7 @@ texture = ExtResource("1_27apg")
 3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0, -4, 0, -4, -4, 0, 0, -4, 4, -8, 4)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_57cme"]
-texture = ExtResource("2_faq5g")
+texture = ExtResource("2_42smp")
 1:1/0 = 0
 2:1/0 = 0
 3:1/0 = 0
