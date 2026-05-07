@@ -1,4 +1,5 @@
-extends Node
+extends InteractableComponent
+class_name DialogueComponent
 
 
 # Called when the node enters the scene tree for the first time.

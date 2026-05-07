@@ -152,9 +152,16 @@ animated_sprite_2d = NodePath("AnimatedSprite2D")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1400130690]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_f7165")
+animation = &"run"
 autoplay = "default"
-frame_progress = 0.88252753
+frame_progress = 0.9167094
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1767949624]
 position = Vector2(0, -3)
 shape = SubResource("CircleShape2D_p6k7d")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1848993011]
+offset = Vector2(0, -8)
+zoom = Vector2(4, 4)
+position_smoothing_enabled = true
+position_smoothing_speed = 16.0
