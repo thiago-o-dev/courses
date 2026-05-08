@@ -50,7 +50,7 @@ class: invert
 # Godot
 * ## Iniciativa **FOSS**, sempre será gratuito.
 * ## Desenvolvimento 2D muito simples.
-* ## Melhorou muito no 3D, mas **ainda não** tem jogos AAA.
+* ## Melhorou muito no 3D, mas **ainda não** é foco de empresas AAA. (mas tem jogos [incriveis](https://store.steampowered.com/app/1963610/Road_to_Vostok/))
 * ## Leve, roda em **quase** tudo (não tem suporte para consoles).
 * ## É a game engine para **indies**.
 ###### Buckshot Roulette, Cassete Beasts, Brotato, Dog Walk (jogo do blender), Slay the Spire 2, Dome Keeper, Endoparasitic, EX-Zodiac, Gourdlets, Sonic Colors Ultimate...
