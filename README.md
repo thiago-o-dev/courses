@@ -22,7 +22,7 @@ _class: lead invert gaia
 - Introdução a sinais/eventos
 
 # <!--fit-->[Aula 2: Aprofundamento em padrões de programação](https://thiago-o-dev.github.io/courses/docs/lesson-2)
-### Essa é uma aula pesada mas uma das mais uteis.
+#### Essa é uma aula pesada mas é conhecimento imprescindível.
 - Máquinas de estado
 - Sinais complexos
 - Signal Bus (famosa lista encadeada)
