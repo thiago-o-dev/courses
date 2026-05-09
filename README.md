@@ -21,6 +21,21 @@ _class: lead invert gaia
 - Herança vs Componentização
 - Introdução a sinais/eventos
 
+# <!--fit-->[Aula 2: Aprofundamento em padrões de programação](https://thiago-o-dev.github.io/courses/docs/lesson-2)
+### Essa é uma aula pesada mas uma das mais uteis.
+- Máquinas de estado
+- Sinais complexos
+- Signal Bus (famosa lista encadeada)
+- Singleton/Autoloads
+- O que é ser **stateless ou stateful**
+
+# <!--fit-->[Aula 3: Introduçao ao visual](https://thiago-o-dev.github.io/courses/docs/lesson-3)
+- O que são tweens
+- matemática gráfica
+- eases e transitions
+- formulas comuns
+- aplicaçoes interessantes
+
 # Ferramentas utilizadas na criação do minicurso:
 - marp
 - github pages
