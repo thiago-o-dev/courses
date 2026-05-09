@@ -35,6 +35,11 @@ _class: lead invert gaia
 - eases e transitions
 - formulas comuns
 - aplicaçoes interessantes
+- o que sao shaders
+
+# <!--fit-->[Aula 4: Planejando um jogoa](https://thiago-o-dev.github.io/courses/docs/lesson-4)
+- vai ter gdd
+- nao decidi o resto mals ai
 
 # Ferramentas utilizadas na criação do minicurso:
 - marp
