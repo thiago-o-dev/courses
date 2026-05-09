@@ -29,17 +29,21 @@ _class: lead invert gaia
 - Singleton/Autoloads
 - O que é ser **stateless ou stateful**
 
-# <!--fit-->[Aula 3: Introduçao ao visual](https://thiago-o-dev.github.io/courses/docs/lesson-3)
+# <!--fit-->[Aula 3: Introduçao aos efeitos visuais](https://thiago-o-dev.github.io/courses/docs/lesson-3)
 - O que são tweens
-- matemática gráfica
-- eases e transitions
-- formulas comuns
-- aplicaçoes interessantes
-- o que sao shaders
+- Matemática gráfica
+- Eases e transitions
+- Formulas comuns (dot product, cross product, etc)
+- Aplicaçoes interessantes
+- O que sao shaders
+- Entendendo a GPU e a CPU
 
-# <!--fit-->[Aula 4: Planejando um jogoa](https://thiago-o-dev.github.io/courses/docs/lesson-4)
-- vai ter gdd
-- nao decidi o resto mals ai
+# <!--fit-->[Aula 4: Como planejar o seu próprio jogo?](https://thiago-o-dev.github.io/courses/docs/lesson-4)
+- Recaptulação geral
+- Qual deve ser o foco ao criar o seu jogo?
+- Quando criar um GDD (Game Design Document)
+- Como colocar seu jogo na itch.io
+- Como participar de Game Jams
 
 # Ferramentas utilizadas na criação do minicurso:
 - marp
