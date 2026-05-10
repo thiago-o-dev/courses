@@ -45,6 +45,16 @@ _class: lead invert gaia
 - Como colocar seu jogo na itch.io
 - Como participar de Game Jams
 
+### Quem sou eu:
+# Thiago Henrique do **Rego**
+## Unimar
+- Estou no quinto termo de Ciencia da Computação
+## Trabalho
+- Trabalho primariamente com Backend .NET, mas faço trabalho de banco de dados, admin de sistemas, front e até devOps, sigo vivo felizmente.
+- Programador de jogos Unity para empresas como Nestle e Ypê
+- Crio jogos comerciais, as vezes até como animador 2D ou 3D
+- Participo de gamejams normalmente como dev principal
+
 # Ferramentas utilizadas na criação do minicurso:
 - marp
 - github pages
