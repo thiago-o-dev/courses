@@ -8,12 +8,12 @@ class: invert
 ---
 
 ## Ementa da aula
-- Ferramentas que serão utilizadas no curso.
-- Diferenças entre game engines.
-- Entender a base da programação orientada a objetos em jogos.
-- Similaridades entre desenvolvimento de jogos e desenvolvimento BackEnd.
-- Herança vs Componentização
-- Introdução a sinais/eventos
+- Ferramentas que serão utilizadas no curso;
+- Diferenças entre game engines;
+- Entender a base da programação orientada a objetos em jogos;
+- Similaridades entre desenvolvimento de jogos e desenvolvimento BackEnd;
+- Herança vs Componentização;
+- Introdução a sinais/eventos.
 ---
 
 # Ferramentas do curso

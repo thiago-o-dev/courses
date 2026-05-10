@@ -14,48 +14,45 @@ _class: lead invert gaia
 ###### Clique nos titulos para abrir as aulas.
  
 # <!--fit-->[Aula 1: Introdução a programação de jogos](https://thiago-o-dev.github.io/courses/docs/lesson-1) 
-- Ferramentas que serão utilizadas no curso.
-- Diferenças entre game engines.
-- Entender a base da programação orientada a objetos em jogos.
-- Similaridades entre desenvolvimento de jogos e desenvolvimento BackEnd.
-- Herança vs Componentização
-- Introdução a sinais/eventos
+- Ferramentas que serão utilizadas no curso;
+- Diferenças entre game engines;
+- Entender a base da programação orientada a objetos em jogos;
+- Similaridades entre desenvolvimento de jogos e desenvolvimento BackEnd;
+- Herança vs Componentização;
+- Introdução a sinais/eventos.
 
 # <!--fit-->[Aula 2: Aprofundamento em padrões de programação](https://thiago-o-dev.github.io/courses/docs/lesson-2)
 #### Essa é uma aula pesada mas é conhecimento imprescindível.
-- Máquinas de estado
-- Sinais complexos
-- Signal Bus (famosa lista encadeada)
-- Singleton/Autoloads
-- O que é ser **stateless ou stateful**
+- Máquinas de estado;
+- Sinais complexos;
+- Signal Bus; (famosa lista encadeada)
+- Singleton/Autoloads;
+- O que é ser **stateless ou stateful**.
 
 # <!--fit-->[Aula 3: Introduçao aos efeitos visuais](https://thiago-o-dev.github.io/courses/docs/lesson-3)
-- O que são tweens
-- Matemática gráfica
-- Eases e transitions
-- Formulas comuns (dot product, cross product, etc)
-- Aplicaçoes interessantes
-- O que sao shaders
-- Entendendo a GPU e a CPU
+- O que são tweens;
+- Matemática gráfica;
+- Eases e transitions;
+- Formulas comuns; (dot product, cross product, etc)
+- Aplicaçoes interessantes;
+- O que sao shaders;
+- Entendendo a GPU e a CPU.
 
 # <!--fit-->[Aula 4: Como planejar o seu próprio jogo?](https://thiago-o-dev.github.io/courses/docs/lesson-4)
-- Recaptulação geral
-- Qual deve ser o foco ao criar o seu jogo?
-- Quando criar um GDD (Game Design Document)
-- Como colocar seu jogo na itch.io
-- Como participar de Game Jams
+- Recaptulação geral;
+- Qual deve ser o foco ao criar o seu jogo;
+- Quando criar um GDD; (Game Design Document)
+- Como colocar seu jogo na itch.io;
+- Como participar de Game.
 
-### Quem sou eu:
 # Thiago Henrique do **Rego**
-## Unimar
-- Estou no quinto termo de Ciencia da Computação
-## Trabalho
-- Trabalho primariamente com Backend .NET, mas faço trabalho de banco de dados, admin de sistemas, front e até devOps, sigo vivo felizmente.
-- Programador de jogos Unity para empresas como Nestle e Ypê
-- Crio jogos comerciais, as vezes até como animador 2D ou 3D
-- Participo de gamejams normalmente como dev principal
+- Estou no quinto termo de Ciencia da Computação;
+- Trabalho **primariamente** com Backend .NET, mas faço trabalho de banco de dados, admin de sistemas, front e até devOps, sigo vivo felizmente;
+- Programador de jogos Unity para empresas como Nestle e Ypê;
+- Crio jogos comerciais, as vezes até como animador 2D ou 3D;
+- Participo de gamejams normalmente como dev principal.
 
 # Ferramentas utilizadas na criação do minicurso:
-- marp
-- github pages
-- [marp-to-pages](https://github.com/robalexdev/marp-to-pages/)
+- marp;
+- github pages;
+- [marp-to-pages](https://github.com/robalexdev/marp-to-pages/).
