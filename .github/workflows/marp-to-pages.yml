@@ -26,8 +26,7 @@ jobs:
           node-version: 20
 
       - name: Install packages
-        run: |
-          npm install
+        run: npm install
 
       - name: Ensure build dir exists
         run: mkdir -p build
@@ -38,55 +37,39 @@ jobs:
             cp -R img build/img;
           fi
 
-      - name: Marp Build (README)
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: >
-            README.md
-            --config marp.config.mjs
-            --allow-local-files
+      - name: Marp Build (README HTML)
+        run: |
+          npx marp README.md \
+            --config marp.config.mjs \
+            --allow-local-files \
             -o build/index.html
-        env:
-          MARP_USER: root:root
 
-      - name: Marp Build (README.pdf)
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: >
-            README.md
-            --config marp.config.mjs
-            --allow-local-files
+      - name: Marp Build (README PDF)
+        run: |
+          npx marp README.md \
+            --config marp.config.mjs \
+            --allow-local-files \
             -o build/README.pdf
-        env:
-          MARP_USER: root:root
 
-      - name: Marp Build (README.pptx)
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: >
-            README.md
-            --config marp.config.mjs
-            --allow-local-files
+      - name: Marp Build (README PPTX)
+        run: |
+          npx marp README.md \
+            --config marp.config.mjs \
+            --allow-local-files \
             -o build/README.pptx
-        env:
-          MARP_USER: root:root
 
       - name: Check if docs folder exists
         id: docs-folder-exists
         run: |
           bash -c "[[ -d docs ]] ; echo \"has_docs=\$?\" >> \"$GITHUB_OUTPUT\""
 
-      - name: Marp Build (docs folder, if exists)
+      - name: Marp Build (docs folder)
         if: steps.docs-folder-exists.outputs.has_docs == '0'
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: >
-            -I docs/
-            --config marp.config.mjs
-            --allow-local-files
+        run: |
+          npx marp -I docs/ \
+            --config marp.config.mjs \
+            --allow-local-files \
             -o build/docs/
-        env:
-          MARP_USER: root:root
 
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' }}
