@@ -56,7 +56,7 @@ _class: lead invert gaia
 - marp;
 - mermaid;
 - github pages;
-- [marp-to-pages](https://github.com/robalexdev/marp-to-pages/).
+- [marp-to-pages](https://github.com/robalexdev/marp-to-pages/)  (pipeline alterado para rodar aqui, pq eu não queria só renderizar gráficos em build mas em tempo real então renderizo gráficos mermaid via server-side, é um caos).
 
 # Como rodar localmente:
 - instale em https://github.com/thiago-o-dev/courses
