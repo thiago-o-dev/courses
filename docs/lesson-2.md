@@ -3,6 +3,35 @@ marp: true
 size: 16:9
 class: invert 
 ---
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'dark',
+    flowchart: {
+      useMaxWidth: false,
+      htmlLabels: false,
+      nodeSpacing: 80,
+      rankSpacing: 120
+    },
+    themeVariables: {
+      fontSize: '22px'
+    }
+  });
+</script>
+<style>
+.mermaid {
+  display: flex;
+  justify-content: center;
+}
+
+.mermaid svg {
+  max-width: 95%;
+  max-height: 70vh;
+}
+</style>
+
 ![opacity:0.05 bg](../img/godot_logo.png)
 
 # <!--fit-->Aprofundamento em **padrões de programação**
@@ -26,6 +55,31 @@ class: invert
 ---
 
 # Isso dá as máquinas de estado uma aparência facilmente representavel por **fluxogramas**
+---
+
+# Exemplos:
+
+```mermaid
+flowchart LR 
+    %% Estados
+    P([Parado])
+    A([Andando])
+    C([Correndo])
+
+    %% Transições normais
+    P -->|Começar a andar| A
+    A -->|Parar| P
+    A -->|Acelerar| C
+    C -->|Diminuir velocidade| A
+
+    %% Transição especial
+    C -.->|Parada brusca| P
+```
+
+---
+
+# teste
+
 ---
 
 wip

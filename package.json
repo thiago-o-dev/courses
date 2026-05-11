@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.4.0",
+    "@marp-team/marp-core": "^4.3.0"
+  },
+  "dependencies": {
+    "markdown-it-mermaid": "^0.2.0",
+    "mermaid": "^11.14.0"
+  }
+}

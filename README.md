@@ -54,5 +54,16 @@ _class: lead invert gaia
 
 # Ferramentas utilizadas na criação do minicurso:
 - marp;
+- mermaid;
 - github pages;
 - [marp-to-pages](https://github.com/robalexdev/marp-to-pages/).
+
+# Como rodar localmente:
+- instale em https://github.com/thiago-o-dev/courses
+#### Comandos
+```bash
+npm install
+# Depois
+npx marp --config marp.config.mjs --server .
+```
+Abra a localhost:8080, clicando no nome (não no pdf/pptx) você vai visualizar corretamente os diagramas.
