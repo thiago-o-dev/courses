@@ -22,7 +22,7 @@ class: invert
 ## Ementa da aula:
 - Máquinas de estado;
 - Sinais complexos;
-- Signal Bus; (famosa lista encadeada)
+- Signal Bus; (comunicação centralizada)
 - Singleton/Autoloads;
 - O que é ser **stateless ou stateful**.
 ---
@@ -260,7 +260,7 @@ stateDiagram-v2
 
 # Autoloads/Singletons:
 * ### São códigos, cenas ou recursos **instanciados globalmente**, visto isso, possuem **persistência entre cenas** de forma automatica – nunca sendo descarregados;
-* ### Normalmente usados esparçamente visto que **podem gerar gastos inesperados de memória** quando em larga escala, mas **extremamente uteis** para sistemas globais.
+* ### Normalmente usados esparçamente visto que **podem gerar gastos inesperados de memória** quando em larga escala, mas **extremamente úteis** para sistemas globais.
 
 ---
 
