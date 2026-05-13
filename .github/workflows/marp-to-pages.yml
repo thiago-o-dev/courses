@@ -55,7 +55,6 @@ jobs:
         run: |
           npx marp README.md \
             --config marp.config.mjs \
-            --allow-local-files \
             -o build/README.pptx
 
       - name: Check if docs folder exists
@@ -68,7 +67,6 @@ jobs:
         run: |
           npx marp -I docs/ \
             --config marp.config.mjs \
-            --allow-local-files \
             -o build/docs/
 
       - name: Deploy preview
