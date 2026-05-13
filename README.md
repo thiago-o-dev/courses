@@ -40,10 +40,10 @@ _class: lead invert gaia
 
 # <!--fit-->[Aula 4: Como planejar o seu próprio jogo?](https://thiago-o-dev.github.io/courses/docs/lesson-4)
 - Recaptulação geral;
-- Qual deve ser o foco ao criar o seu jogo;
+- Pontos importantes para desenvolver o seu jogo;
 - Quando criar um GDD; (Game Design Document)
 - Como colocar seu jogo na itch.io;
-- Como participar de Game.
+- Como participar de Game Jams.
 
 # Thiago Henrique do **Rego**
 - Estou no quinto termo de Ciencia da Computação;
