@@ -31,11 +31,11 @@ class: invert
 
 ---
 # <!--fit-->Citando uns, os principios **S.O.L.I.D.**
-* ### **Single Responsibility**: Uma classe deve ter apenas uma responsabilidade.
-* ### **Open/Closed**: Entidades de software (classes, módulos, funções) devem estar abertas para extensão, mas fechadas para modificação.
-* ### **Liskov Substitution**: Objetos de uma **subclasse** devem poder substituir objetos da **superclasse** sem quebrar a aplicação.
-* ### **Interface Segregation**: Uma classe não deve ser forçada a implementar interfaces e métodos que não utiliza **(esse o godot não tem 100%)**.
-* ### **Dependency Inversion**: Dependa de abstrações (interfaces) e não de implementações concretas **(esse tbm)**.
+* ### S**ingle Responsibility**: Uma classe deve ter apenas uma responsabilidade.
+* ### O**pen/Closed**: Entidades de software (classes, módulos, funções) devem estar abertas para extensão, mas fechadas para modificação.
+* ### L**iskov Substitution**: Objetos de uma **subclasse** devem poder substituir objetos da **superclasse** sem quebrar a aplicação.
+* ### I**nterface Segregation**: Uma classe não deve ser forçada a implementar interfaces e métodos que não utiliza **(esse o godot não tem 100%)**.
+* ### D**ependency Inversion**: Dependa de abstrações (interfaces) e não de implementações concretas **(esse tbm)**.
 ---
 # Então agora quando formos aplicar:
 - # **componetização**; 
