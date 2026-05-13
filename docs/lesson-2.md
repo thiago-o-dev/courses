@@ -254,7 +254,7 @@ stateDiagram-v2
 # <!--fit--> Até esse ponto **não existe nenhuma diferença**.
 
 --- 
-# **Daqui pra frente** vamos usamos as propriedades de um sinal para criar um **sistema de comunicação centralizado**.
+# **Daqui pra frente** vamos usar as propriedades de um sinal para criar um **sistema de comunicação centralizado**.
 # Transferindo assim, **sinais entre multiplos componentes** por meio de um **autoload** em comum.
 ---
 
