@@ -52,7 +52,7 @@ _class: lead invert gaia
 - Crio jogos comerciais, as vezes até como animador 2D ou 3D;
 - Participo de gamejams normalmente como dev principal.
 
-# Ferramentas utilizadas na criação do minicurso:
+# <!--fit-->Ferramentas utilizadas na criação do minicurso:
 - marp;
 - mermaid;
 - github pages;
