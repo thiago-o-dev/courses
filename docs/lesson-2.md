@@ -251,6 +251,25 @@ stateDiagram-v2
 
 ---
 
-# Até esse ponto **não existe nenhuma diferença**.
+# <!--fit--> Até esse ponto **não existe nenhuma diferença**.
 
-# **Daqui pra frente** vamos usamos as propriedades de um sinal para **conversar com os nossos subscribers**.
+--- 
+# **Daqui pra frente** vamos usamos as propriedades de um sinal para criar um **sistema de comunicação centralizado**.
+# Transferindo assim, **sinais entre multiplos componentes** por meio de um **autoload** em comum.
+---
+
+# Autoloads/Singletons:
+* ### São códigos, cenas ou recursos **instanciados globalmente**, visto isso, possuem **persistência entre cenas** de forma automatica – nunca sendo descarregados;
+* ### Normalmente usados esparçamente visto que **podem gerar gastos inesperados de memória** quando em larga escala, mas **extremamente uteis** para sistemas globais.
+
+---
+
+# Para contextualizar essas ideias, vamos ver o addon feito por **Nathan Hoad** chamado **Dialogue Manager**.
+
+---
+
+# Aulas e códigos **disponiveis** no github: 
+## <!--fit--> https://github.com/thiago-o-dev
+- (me sigam lá)
+# Site buildado:
+## <!--fit--> https://thiago-o-dev.github.io/courses/
