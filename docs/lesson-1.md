@@ -121,7 +121,7 @@ class: invert
 
 ---
 
-# Aulas e códigos **disponiveis** no github: 
+# Aulas e códigos **disponíveis** no github: 
 ## <!--fit--> https://github.com/thiago-o-dev
 - (me sigam lá)
 # Site buildado:

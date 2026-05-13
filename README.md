@@ -29,7 +29,7 @@ _class: lead invert gaia
 - Singleton/Autoloads;
 - O que é ser **stateless ou stateful**.
 
-# <!--fit-->[Aula 3: Introduçao aos efeitos visuais](https://thiago-o-dev.github.io/courses/docs/lesson-3)
+# <!--fit-->[Aula 3: Introdução aos efeitos visuais](https://thiago-o-dev.github.io/courses/docs/lesson-3)
 - O que são tweens;
 - Matemática gráfica;
 - Eases e transitions;
@@ -45,12 +45,12 @@ _class: lead invert gaia
 - Como colocar seu jogo na itch.io;
 - Como participar de Game Jams.
 
-# Thiago Henrique do **Rego**
-- Estou no quinto termo de Ciencia da Computação;
-- Trabalho **primariamente** com Backend .NET, mas faço trabalho de banco de dados, admin de sistemas, front e até devOps, sigo vivo felizmente;
-- Programador de jogos Unity para empresas como Nestle e Ypê;
-- Crio jogos comerciais, as vezes até como animador 2D ou 3D;
-- Participo de gamejams normalmente como dev principal.
+# <!--fit-->Thiago Henrique do **Rego**
+- Estou no **quinto** termo de **Ciência da Computação**;
+- Trabalho **primariamente** com **Backend .NET**, mas faço trabalho de banco de dados, admin de sistemas, front e até devOps. Sigo vivo felizmente;
+- Programador de jogos Unity para empresas como **Nestle** e **Ypê**;
+- Crio jogos comerciais, as vezes até como **animador 2D ou 3D**;
+- Participo de gamejams, normalmente como dev principal.
 
 # <!--fit-->Ferramentas utilizadas na criação do minicurso:
 - marp;
@@ -66,4 +66,4 @@ npm install
 # Depois
 npx marp --config marp.config.mjs --server .
 ```
-Abra a localhost:8080, clicando no nome (não no pdf/pptx) você vai visualizar corretamente os diagramas.
+Abra a localhost:8080, clique no nome (não no pdf/pptx) e visualize corretamente os diagramas.

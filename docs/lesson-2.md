@@ -27,10 +27,10 @@ class: invert
 - O que é ser **stateless ou stateful**.
 ---
 
-# Como vimos na ultima aula **todo padrão acaba indo atrás de aplicar principios gerais da programação**.
+# Como vimos na última aula **todo padrão acaba indo atrás de aplicar princípios gerais da programação**.
 
 ---
-# <!--fit-->Citando uns, os principios **S.O.L.I.D.**
+# <!--fit-->Citando alguns, os princípios **S.O.L.I.D.**
 * ### S**ingle Responsibility**: Uma classe deve ter apenas uma responsabilidade.
 * ### O**pen/Closed**: Entidades de software (classes, módulos, funções) devem estar abertas para extensão, mas fechadas para modificação.
 * ### L**iskov Substitution**: Objetos de uma **subclasse** devem poder substituir objetos da **superclasse** sem quebrar a aplicação.
@@ -39,8 +39,8 @@ class: invert
 ---
 # Então agora quando formos aplicar:
 - # **componetização**; 
-- # futuramente, **maquinas de estado**;
-# Sabemos que elas servem para deixar esses **principios integros no nosso projeto**. 
+- # futuramente, **máquinas de estado**;
+# Sabemos que elas servem para deixar esses **princípios integros no nosso projeto**. 
 # Deixando ele assim...
 ---
 # **Manutenível**
@@ -56,7 +56,7 @@ class: invert
 
 ---
 
-# Isso dá as máquinas de estado uma aparência facilmente representavel por **fluxogramas**.
+# Isso dá as máquinas de estado uma aparência facilmente representável por **fluxogramas**.
 ---
 <div class="center">
 
@@ -122,11 +122,11 @@ flowchart LR
     A([Andando])
     C([Correndo])
 
-    A <-.->|Mesmo movimento essensialmente| C
+    A <-.->|Mesmo movimento essencialmente| C
 ```
 <br>
 
-### Dessa forma podemos até dizer que **andando e correndo** tem essencialmente a **mesma função de movimento**, mas com variaveis diferentes e algumas transições diferentes.
+### Dessa forma podemos até dizer que **andando e correndo** tem essencialmente a **mesma função de movimento**, mas com variáveis diferentes e algumas transições diferentes.
 
 ---
 
@@ -140,7 +140,7 @@ flowchart LR
     C -->|Velocidade 400, vetor de input e delta| Z -.->|Resposta da velocidade| C
 ```
 
-### Nesses casos podemos deixar **o calculo de movimento** em comum **em uma função estática** para evitarmos nos repetir e nos estados **ligar somente para as transições**.
+### Nesses casos podemos deixar **o cálculo de movimento** em comum **em uma função estática** para evitarmos nos repetir e nos estados **ligar somente para as transições**.
 
 ---
 
@@ -148,7 +148,7 @@ flowchart LR
 
 ---
 
-# Aulas e códigos **disponiveis** no github: 
+# Aulas e códigos **disponíveis** no github: 
 ## <!--fit--> https://github.com/thiago-o-dev
 - (me sigam lá)
 # Site buildado:
@@ -161,7 +161,7 @@ flowchart LR
 * ### Entendimento mais profundo sobre peculiaridades da arquitetura publish and subscribe e exemplos do mundo real como RabbitMQ.
 
 ---
-### **Sinal simples**, sem variaveis
+### **Sinal simples**, sem variáveis
 
 ```mermaid
 flowchart LR
@@ -184,7 +184,7 @@ flowchart LR
 ```
 
 ---
-### **Sinal complexo**, com variaveis
+### **Sinal complexo**, com variáveis
 ```mermaid
 %%{init: {
     "themeVariables": {
@@ -218,11 +218,11 @@ flowchart LR
 
 ---
 
-## O **Signal Bus** pega isso e leva a **outro patamar**, deixando possivel usar o padrão de **listas encadeadas** e **muito além**.
+## O **Signal Bus** pega isso e leva a **outro patamar**, deixando possível usar o padrão de **listas encadeadas** e **muito além**.
 
 ---
 
-# Vamos imaginar um **Diálogo**, sendo ele composto por **multiplas linhas**.
+# Vamos imaginar um **Diálogo**, sendo ele composto por **multíplas linhas**.
 
 ```mermaid
 %%{init: {
@@ -251,16 +251,16 @@ stateDiagram-v2
 
 ---
 
-# <!--fit--> Até esse ponto **não existe nenhuma diferença** de uma lista encadeada.
+# Até esse ponto **não existe nenhuma diferença** de uma lista encadeada.
 
 --- 
 # **Daqui pra frente** vamos usar as propriedades de um sinal para criar um **sistema de comunicação centralizado**.
-# Transferindo assim, **sinais entre multiplos componentes** por meio de um **autoload** em comum.
+# Transferindo assim, **sinais entre multíplos componentes** por meio de um **autoload** em comum.
 ---
 
 # Autoloads/Singletons:
-* ### São códigos, cenas ou recursos **instanciados globalmente**, visto isso, possuem **persistência entre cenas** de forma automatica – nunca sendo descarregados;
-* ### Normalmente usados esparçamente visto que **podem gerar gastos inesperados de memória** quando em larga escala, mas **extremamente úteis** para sistemas globais.
+* ### São códigos, cenas ou recursos **instanciados globalmente**, visto isso, possuem **persistência entre cenas** de forma automática – nunca sendo descarregados;
+* ### Normalmente usados esparsamente visto que **podem gerar gastos inesperados de memória** quando em larga escala, mas **extremamente úteis** para sistemas globais.
 
 ---
 
@@ -268,7 +268,7 @@ stateDiagram-v2
 
 ---
 
-# Aulas e códigos **disponiveis** no github: 
+# Aulas e códigos **disponíveis** no github: 
 ## <!--fit--> https://github.com/thiago-o-dev
 - (me sigam lá)
 # Site buildado:
