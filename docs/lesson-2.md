@@ -3,6 +3,16 @@ marp: true
 size: 16:9
 class: invert 
 ---
+
+<style>
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+</style>
+
 ![opacity:0.05 bg](../img/godot_logo.png)
 
 # <!--fit-->Aprofundamento em **padrões de programação**
@@ -20,7 +30,7 @@ class: invert
 # Como vimos na ultima aula **todo padrão acaba indo atrás de aplicar principios gerais da programação**.
 
 ---
-# <!--fit-->Citando um, os principios **S.O.L.I.D.**
+# <!--fit-->Citando uns, os principios **S.O.L.I.D.**
 * ### **Single Responsibility**: Uma classe deve ter apenas uma responsabilidade.
 * ### **Open/Closed**: Entidades de software (classes, módulos, funções) devem estar abertas para extensão, mas fechadas para modificação.
 * ### **Liskov Substitution**: Objetos de uma **subclasse** devem poder substituir objetos da **superclasse** sem quebrar a aplicação.
@@ -28,8 +38,8 @@ class: invert
 * ### **Dependency Inversion**: Dependa de abstrações (interfaces) e não de implementações concretas **(esse tbm)**.
 ---
 # Então agora quando formos aplicar:
-- # **maquinas de estado**;
 - # **componetização**; 
+- # futuramente, **maquinas de estado**;
 # Sabemos que elas servem para deixar esses **principios integros no nosso projeto**. 
 # Deixando ele assim...
 ---
@@ -39,17 +49,19 @@ class: invert
 ###### Etimologia (origem da palavra manutenível). Do latim manutenibilis / manutenere.
 ---
 # Máquinas de estado:
-* Forma diferente de pensar nas ações;
-* Pensamos não no quê fazer a todo momento, mas em:
-    * O que ocorre se estamos em um estado;
-    * Da onde podemos ir apartir deste estado.
+* ### Forma diferente de pensar **nas ações**;
+* ### Pensamos **não** no quê fazer a todo momento, mas em:
+    * ### O que ocorre **se estamos em um estado**;
+    * ### Da **onde podemos ir** apartir deste estado.
 
 ---
 
 # Isso dá as máquinas de estado uma aparência facilmente representavel por **fluxogramas**.
 ---
+<div class="center">
 
 ### Vamos pensar então no movimento de um personagem
+</div>
 <br>
 <br>
 
@@ -72,7 +84,11 @@ flowchart LR
 
 ---
 
+<div class="center">
+
 ###### Agora podemos pensar nas ações dentro de cada etapa
+</div>
+
 <br>
 
 ```mermaid
@@ -137,3 +153,104 @@ flowchart LR
 - (me sigam lá)
 # Site buildado:
 ## <!--fit--> https://thiago-o-dev.github.io/courses/
+
+---
+
+# Sinais **complexos**
+* ### Sinais não são apenas na ocorrência de um evento, eles podem trazer **mais informação junto deles**. Como se fossem uma **chamada de função**;
+* ### Entendimento mais profundo sobre peculiaridades da arquitetura publish and subscribe e exemplos do mundo real como RabbitMQ.
+
+---
+### **Sinal simples**, sem variaveis
+
+```mermaid
+flowchart LR
+
+    A["Ataque"]
+    B["Sinal de Hit"]
+    C["Enemy Subscriber"]
+    D["Hitbox Subscriber"]
+    E["Enemy reage pro hit, talvez um flash vermelho"]
+    G["Desativa a Hitbox"]
+
+    A -->|"emite Hit"| B
+
+    B -->|"notifica"| C
+    B -->|"notifica"| D
+
+    C -->|"OnHit"| E
+
+    D -->|"OnHit"| G
+```
+
+---
+### **Sinal complexo**, com variaveis
+```mermaid
+%%{init: {
+    "themeVariables": {
+        "fontSize": "26px"
+    }
+}}%%
+flowchart LR
+    A["Ataque"]
+    B["Sinal de Hit"]
+    C["Enemy Subscriber"]
+    D["Hitbox Subscriber"]
+
+    E["Intensidade do Flash baseado no damage"]
+
+    F{"hitboxGuid é igual ownGuid?"}
+    G["Desativa Hitbox"]
+    H["Ignora o sinal"]
+
+    A -->|"emite Hit com damage e hitboxGuid"| B
+
+    B -->|"notifica"| C
+    B -->|"notifica"| D
+
+    C -->|"OnHit"| E
+
+    D -->|"OnHit"| F
+
+    F -->|"Sim"| G
+    F -->|"Não"| H
+```
+
+---
+
+# O **Signal Bus** pega isso e leva a outro patamar, juntando essa ideia a ideia de **listas encadeadas**.
+
+---
+
+# Vamos imaginar um **Diálogo**, sendo ele composto por **multiplas linhas**.
+
+```mermaid
+%%{init: {
+    "themeVariables": {
+        "fontSize": "30px"
+    }
+}}%%
+stateDiagram-v2
+    state Diálogo{
+            direction LR
+            [*] --> 1
+            1: Linha
+            2: Linha
+            3: Linha
+            4: Linha
+            1 --> 2
+            2 --> 3
+            3 --> 4
+            4 --> [*]
+    }
+```
+
+---
+
+# Nessa visualização **já vemos o padrão**, toda linha tem um **próximo**, e quando não tem, **ela é a ultima linha**.
+
+---
+
+# Até esse ponto **não existe nenhuma diferença**.
+
+# **Daqui pra frente** vamos usamos as propriedades de um sinal para **conversar com os nossos subscribers**.
