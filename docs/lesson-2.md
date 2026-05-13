@@ -218,7 +218,7 @@ flowchart LR
 
 ---
 
-# O **Signal Bus** pega isso e leva a outro patamar, juntando essa ideia a ideia de **listas encadeadas**.
+## O **Signal Bus** pega isso e leva a **outro patamar**, deixando possivel usar o padrão de **listas encadeadas** e **muito além**.
 
 ---
 
@@ -251,7 +251,7 @@ stateDiagram-v2
 
 ---
 
-# <!--fit--> Até esse ponto **não existe nenhuma diferença**.
+# <!--fit--> Até esse ponto **não existe nenhuma diferença** de uma lista encadeada.
 
 --- 
 # **Daqui pra frente** vamos usar as propriedades de um sinal para criar um **sistema de comunicação centralizado**.

@@ -25,7 +25,7 @@ _class: lead invert gaia
 #### Essa é uma aula pesada mas é conhecimento imprescindível.
 - Máquinas de estado;
 - Sinais complexos;
-- Signal Bus; (famosa lista encadeada)
+- Signal Bus; (comunicação centralizada)
 - Singleton/Autoloads;
 - O que é ser **stateless ou stateful**.
 
