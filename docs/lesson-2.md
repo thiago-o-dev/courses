@@ -46,10 +46,11 @@ class: invert
 
 ---
 
-# Isso dá as máquinas de estado uma aparência facilmente representavel por **fluxogramas**
+# Isso dá as máquinas de estado uma aparência facilmente representavel por **fluxogramas**.
 ---
 
 ### Vamos pensar então no movimento de um personagem
+<br>
 <br>
 
 ```mermaid
@@ -71,11 +72,59 @@ flowchart LR
 
 ---
 
-# teste
+###### Agora podemos pensar nas ações dentro de cada etapa
+<br>
+
+```mermaid
+%%{init: {
+    "themeVariables": {
+        "fontSize": "24px"
+    }
+}}%%
+stateDiagram-v2
+    %% Estados
+    P: Parado
+    A: Andando
+    C: Correndo
+
+    note right of P
+        Aqui nos preocupamos em dissipar a velocidade do player
+    end note
+
+    note right of A
+        Aqui nos preocupamos em levar a velocidade do player até um valor
+    end note
+
+    note right of C
+        Aqui nos preocupamos em levar a velocidade do player até **outro** valor
+    end note
+```
+
+---
+```mermaid
+flowchart LR 
+    A([Andando])
+    C([Correndo])
+
+    A <-.->|Mesmo movimento essensialmente| C
+```
+<br>
+
+### Dessa forma podemos até dizer que **andando e correndo** tem essencialmente a **mesma função de movimento**, mas com variaveis diferentes e algumas transições diferentes.
 
 ---
 
-wip
+```mermaid
+flowchart LR 
+    A([Andando])
+    C([Correndo])
+    Z([CalculadoraMovimento])
+
+    A -->|Velocidade 200, vetor de input e delta| Z -.->|Resposta da velocidade| A
+    C -->|Velocidade 400, vetor de input e delta| Z -.->|Resposta da velocidade| C
+```
+
+### Nesses casos podemos deixar **o calculo de movimento** em comum **em uma função estática** para evitarmos nos repetir e nos estados **ligar somente para as transições**.
 
 ---
 

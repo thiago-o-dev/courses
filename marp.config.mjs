@@ -11,8 +11,6 @@ const MERMAID_SCRIPT = `<script type="module">
     flowchart: {
       useMaxWidth: false,
       htmlLabels: false,
-      nodeSpacing: 80,
-      rankSpacing: 120,
       curve: 'basis',
     },
     themeVariables: {
@@ -22,7 +20,7 @@ const MERMAID_SCRIPT = `<script type="module">
   });
 
   async function renderAll() {
-    const CANVAS_W = 1100;
+    const CANVAS_W = 1400;
     const CANVAS_H = 480;
     const containers = document.querySelectorAll('div.mermaid');
 
@@ -80,12 +78,10 @@ const MERMAID_STYLE = `<style>
     width: 100%;
   }
   section .mermaid svg {
-    width: 95%;
+    width: 100%;
     height: auto;
   }
 </style>`;
-
-// Rendering engine
 
 export default {
   html: true,
