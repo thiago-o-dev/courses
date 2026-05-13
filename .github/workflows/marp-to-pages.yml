@@ -41,14 +41,12 @@ jobs:
         run: |
           npx marp README.md \
             --config marp.config.mjs \
-            --allow-local-files \
             -o build/index.html
 
       - name: Marp Build (README PDF)
         run: |
           npx marp README.md \
             --config marp.config.mjs \
-            --allow-local-files \
             -o build/README.pdf
 
       - name: Marp Build (README PPTX)
