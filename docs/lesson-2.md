@@ -17,6 +17,27 @@ class: invert
 - O que é ser **stateless ou stateful**.
 ---
 
+# Como vimos na ultima aula **todo padrão acaba indo atrás de aplicar principios gerais da programação**.
+
+---
+# <!--fit-->Citando um, os principios **S.O.L.I.D.**
+* ### **Single Responsibility**: Uma classe deve ter apenas uma responsabilidade.
+* ### **Open/Closed**: Entidades de software (classes, módulos, funções) devem estar abertas para extensão, mas fechadas para modificação.
+* ### **Liskov Substitution**: Objetos de uma **subclasse** devem poder substituir objetos da **superclasse** sem quebrar a aplicação.
+* ### **Interface Segregation**: Uma classe não deve ser forçada a implementar interfaces e métodos que não utiliza **(esse o godot não tem 100%)**.
+* ### **Dependency Inversion**: Dependa de abstrações (interfaces) e não de implementações concretas **(esse tbm)**.
+---
+# Então agora quando formos aplicar:
+- # **maquinas de estado**;
+- # **componetização**; 
+# Sabemos que elas servem para deixar esses **principios integros no nosso projeto**. 
+# Deixando ele assim...
+---
+# **Manutenível**
+### Suscetível de ser mantido; que mantém a posse de alguma coisa.
+
+###### Etimologia (origem da palavra manutenível). Do latim manutenibilis / manutenere.
+---
 # Máquinas de estado:
 * Forma diferente de pensar nas ações;
 * Pensamos não no quê fazer a todo momento, mas em:
@@ -28,7 +49,8 @@ class: invert
 # Isso dá as máquinas de estado uma aparência facilmente representavel por **fluxogramas**
 ---
 
-# Exemplos:
+### Vamos pensar então no movimento de um personagem
+<br>
 
 ```mermaid
 flowchart LR 
