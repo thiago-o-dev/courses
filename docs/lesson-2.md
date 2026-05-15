@@ -264,7 +264,9 @@ stateDiagram-v2
 
 ---
 
-# Para contextualizar essas ideias, vamos ver o addon feito por **Nathan Hoad** chamado **Dialogue Manager**.
+# Para contextualizar essas ideias, vamos ver:
+* ## Código simples com o **InteractableComponent** e um **autoload** para fazer isso **usando json**.
+* ## Versão mais completa pelo addon feito por **Nathan Hoad** chamado **Dialogue Manager**.
 
 ---
 
