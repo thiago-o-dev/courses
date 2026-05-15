@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bs1dxrk0ibj6c" path="res://assets/map.tscn" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://b0xrffd0q6frf" path="res://assets/entities/main_character.tscn" id="2_sugp2"]
-[ext_resource type="Script" uid="uid://bf8ahfa87fpmn" path="res://src/implementations/teleport_to_component.gd" id="3_sugp2"]
+[ext_resource type="Script" uid="uid://bf8ahfa87fpmn" path="res://src/implementations/interactable_components/teleport_to_component.gd" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://cin0joih82oxg" path="res://assets/entities/trem_coisado.tscn" id="4_jyhfs"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jyhfs"]
