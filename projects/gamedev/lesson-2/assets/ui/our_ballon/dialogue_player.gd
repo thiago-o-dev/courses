@@ -15,21 +15,28 @@ func _ready():
 	scene_text = load_scene_text()
 	SignalBus.display_dialogue.connect(_on_display_dialogue)
 	
-	SignalBus.request_dialogue("Trem Coisado")
+	#SignalBus.request_dialogue("Trem Coisado")
 
 func _input(event):
 	if !in_progress:
 		return
 	
 	get_viewport().set_input_as_handled()
+	# Isso fala para não rodar _unhandled_input() pois o input está handled
 	
 	if Input.is_action_just_released("interact"):
 		SignalBus.request_dialogue(selected_key)
+		# Chamamos o próximo dialogo da key selecionada, se for a ultima, finalizamos.
+	
+	if Input.is_key_pressed(KEY_0):
+		SignalBus.request_dialogue("Mineirinho")
 
 func _on_display_dialogue(text_key : String):
-	if in_progress:
+	if in_progress and text_key == selected_key:
 		next_line()
 	else:
+		# Fazemos nosso balão apareccer, e colocamos a key como selecionada, entre outros.
+		# Isso é a configuração do nosso "ambiente".
 		set_text_enviroment(true, text_key)
 		selected_text = scene_text[text_key].duplicate()
 		show_text()
@@ -49,11 +56,14 @@ func finish():
 	text_label.text = ""
 	SignalBus.dialogue_ended.emit()
 
+# isso faz ser stateful!
 func set_text_enviroment(state : bool, dialogue_name : String = "Name"):
 	in_progress = state
 	balloon.visible = state
 	name_label.text = dialogue_name.capitalize()
 	selected_key = dialogue_name
+	get_viewport().set_input_as_handled()
+
 func load_scene_text() -> Dictionary:
 	if not FileAccess.file_exists(scene_text_file):
 		push_warning("Missing file: " + scene_text_file)

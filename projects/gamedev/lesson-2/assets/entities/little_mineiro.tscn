@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://twjpqa1uxbt6"]
+
+[ext_resource type="Script" uid="uid://cj8g1wwpfnp4t" path="res://src/implementations/interactable_components/dialogue_component.gd" id="1_yxycp"]
+[ext_resource type="Texture2D" uid="uid://b0gq3057qa0jg" path="res://assets/spritesheets/mineirinho.webp" id="2_5xrix"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5xrix"]
+radius = 27.0
+
+[node name="LittleMineiro" type="Area2D" unique_id=367626726]
+script = ExtResource("1_yxycp")
+dialogue_key = "Mineirinho"
+metadata/_custom_type_script = "uid://cj8g1wwpfnp4t"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1323989473]
+position = Vector2(0, -6)
+scale = Vector2(0.047745347, 0.047745362)
+texture = ExtResource("2_5xrix")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1006129205]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_5xrix")

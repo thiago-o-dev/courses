@@ -6,6 +6,16 @@ var player_body : PlayerBody
 @export var run_state : State
 @export var speed : float = 100
 
+func _enter() -> State:
+	SignalBus.display_dialogue.connect(_on_display_dialogue)
+	return
+
+func _exit() -> void:
+	SignalBus.display_dialogue.disconnect(_on_display_dialogue)
+
+func _on_display_dialogue(_text_key : String):
+	request_state.emit(idle_state)
+
 func process_physics(delta: float) -> State:
 	var direction = ActionComponent.get_movement_input()
 	

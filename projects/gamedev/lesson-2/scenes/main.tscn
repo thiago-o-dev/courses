@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://b0xrffd0q6frf" path="res://assets/entities/main_character.tscn" id="2_sugp2"]
 [ext_resource type="Script" uid="uid://bf8ahfa87fpmn" path="res://src/implementations/interactable_components/teleport_to_component.gd" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://cin0joih82oxg" path="res://assets/entities/trem_coisado.tscn" id="4_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://bwccurwcs1uuy" path="res://assets/ui/our_ballon/dialogue_player.tscn" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://twjpqa1uxbt6" path="res://assets/entities/little_mineiro.tscn" id="6_tefeu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jyhfs"]
 radius = 12.0
@@ -19,26 +21,31 @@ position = Vector2(367, 59)
 [node name="Island1InteractableComponent" type="Area2D" parent="." unique_id=900287326 node_paths=PackedStringArray("tp_marker")]
 position = Vector2(416, 26)
 script = ExtResource("3_sugp2")
-tp_marker = NodePath("Island1TpMarker")
+tp_marker = NodePath("TpMarker")
 metadata/_custom_type_script = "uid://c4nsah4ygq5lv"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Island1InteractableComponent" unique_id=1482653097]
 shape = SubResource("CircleShape2D_jyhfs")
 
-[node name="Island1TpMarker" type="Marker2D" parent="Island1InteractableComponent" unique_id=837291181]
+[node name="TpMarker" type="Marker2D" parent="Island1InteractableComponent" unique_id=837291181]
 position = Vector2(992, -28)
 
 [node name="Island2InteractableComponent2" type="Area2D" parent="." unique_id=1301925736 node_paths=PackedStringArray("tp_marker")]
 position = Vector2(1408, -6)
 script = ExtResource("3_sugp2")
-tp_marker = NodePath("Island1TpMarker")
+tp_marker = NodePath("TpMarker")
 metadata/_custom_type_script = "uid://c4nsah4ygq5lv"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Island2InteractableComponent2" unique_id=1474115227]
 shape = SubResource("CircleShape2D_jyhfs")
 
-[node name="Island1TpMarker" type="Marker2D" parent="Island2InteractableComponent2" unique_id=623023549]
+[node name="TpMarker" type="Marker2D" parent="Island2InteractableComponent2" unique_id=623023549]
 position = Vector2(-990, 37)
 
 [node name="TremCoisado" parent="." unique_id=1773371658 instance=ExtResource("4_jyhfs")]
-position = Vector2(503, 101)
+position = Vector2(429, 101)
+
+[node name="DialoguePlayer" parent="." unique_id=1648398450 instance=ExtResource("5_tbgi4")]
+
+[node name="LittleMineiro" parent="." unique_id=493003303 instance=ExtResource("6_tefeu")]
+position = Vector2(495, 105)

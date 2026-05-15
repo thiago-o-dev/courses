@@ -1,0 +1,4 @@
+CollisionShape2D
+DialogueComponent
+InteractableComponent
+Sprite2D
