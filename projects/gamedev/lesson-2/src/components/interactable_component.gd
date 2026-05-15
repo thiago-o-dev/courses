@@ -2,13 +2,17 @@ extends Area2D
 class_name InteractableComponent
 
 @export var interact_tooltip_packed_scene : PackedScene = preload("res://assets/ui/InteractTooltip.tscn")
+@export var interaction_action : String = "interact"
 var interact_tooltip_instance : Control
 var player_body : PlayerBody
 
 signal interacted(body : PlayerBody)
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_released("ui_accept"):
+	if !player_body:
+		return
+	
+	if event.is_action_released(interaction_action):
 		interacted.emit(player_body)
 
 func _ready():
@@ -23,7 +27,7 @@ func on_body_entered(body : PlayerBody):
 	player_body = body
 	show_tooltip()
 
-func on_body_exited(body : PlayerBody):
+func on_body_exited(_body : PlayerBody):
 	print("body exited by player")
 	player_body = null
 	hide_tooltip()
@@ -46,5 +50,5 @@ func hide_tooltip():
 	
 	interact_tooltip_instance.hide()
 
-func on_interacted(body : PlayerBody):
+func on_interacted(_body : PlayerBody):
 	return

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cin0joih82oxg"]
+
+[ext_resource type="Texture2D" uid="uid://csjckm7x5qcpa" path="res://icon.svg" id="1_k6yjo"]
+[ext_resource type="Script" uid="uid://cj8g1wwpfnp4t" path="res://src/implementations/dialogue_component.gd" id="2_rauls"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hof72"]
+radius = 29.546574
+
+[node name="TremCoisado" type="Node2D" unique_id=1773371658]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=399481002]
+scale = Vector2(0.109375, 0.109375)
+texture = ExtResource("1_k6yjo")
+
+[node name="DialogueComponent" type="Area2D" parent="." unique_id=130145787]
+script = ExtResource("2_rauls")
+dialogue_key = "Trem Coisado"
+metadata/_custom_type_script = "uid://cj8g1wwpfnp4t"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DialogueComponent" unique_id=169645274]
+shape = SubResource("CircleShape2D_hof72")
