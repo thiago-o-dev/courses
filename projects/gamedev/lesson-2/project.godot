@@ -15,6 +15,18 @@ run/main_scene="uid://dfye8xcd23v0p"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+DialogueManager="*uid://c3rodes2l3gxb"
+
+[dialogue_manager]
+
+runtime/balloon_path="res://assets/ui/balloon/balloon.tscn"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
 [layer_names]
 
 2d_physics/layer_1="Player"
