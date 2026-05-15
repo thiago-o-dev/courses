@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bwccurwcs1uuy"]
 
+[ext_resource type="Script" uid="uid://3itgcy3hsi2e" path="res://assets/ui/our_ballon/dialogue_player.gd" id="1_0lk5a"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h4ecl"]
 content_margin_left = 0.0
 content_margin_top = 0.0
@@ -16,7 +18,12 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 50
 corner_detail = 5
 
-[node name="DialoguePlayer" type="CanvasLayer" unique_id=1648398450]
+[node name="DialoguePlayer" type="CanvasLayer" unique_id=1648398450 node_paths=PackedStringArray("balloon", "name_label", "text_label")]
+script = ExtResource("1_0lk5a")
+scene_text_file = "res://src/dialogue/main.json"
+balloon = NodePath("Balloon")
+name_label = NodePath("Balloon/MarginContainer/Panel/MarginContainer/VBoxContainer/Name")
+text_label = NodePath("Balloon/MarginContainer/Panel/MarginContainer/VBoxContainer/Text")
 
 [node name="Balloon" type="Control" parent="." unique_id=662140583]
 layout_mode = 3

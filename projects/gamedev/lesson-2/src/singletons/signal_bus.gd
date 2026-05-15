@@ -5,7 +5,8 @@ extends Node
 
 # Por causa disso, não definimos ele como uma classe. Ele é uma instancia unica.
 
-signal diplay_dialogue(dialogue_key : String)
+signal display_dialogue(dialogue_key : String)
+signal dialogue_ended
 
 func request_dialogue(dialogue_key : String):
-	diplay_dialogue.emit(diplay_dialogue, dialogue_key)
+	display_dialogue.emit(dialogue_key)
