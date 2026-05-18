@@ -11,8 +11,19 @@ config_version=5
 [application]
 
 config/name="New Game Project"
+run/main_scene="uid://155xx7s6y6ta"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SignalBus="*uid://bwbqgctd6fc3t"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=800
+window/stretch/mode="canvas_items"
 
 [physics]
 

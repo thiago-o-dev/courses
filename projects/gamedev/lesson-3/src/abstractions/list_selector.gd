@@ -15,6 +15,7 @@ var selected_index = 0
 var showing_options : bool = false
 
 @abstract func set_options()
+@abstract func update_on_item_selected()
 
 func _ready():
 	set_options()
@@ -39,6 +40,7 @@ func _on_item_selected(index : int):
 	select_label.text = options[index]
 	
 	_switch_views()
+	update_on_item_selected()
 
 #var timer : Timer
 func _switch_views_on_mouse_exited():

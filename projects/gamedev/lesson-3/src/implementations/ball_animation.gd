@@ -1,4 +1,5 @@
 extends Control
+class_name BallAnimator
 
 @export var ball : TextureRect
 @export var goals : Array[TextureRect]
@@ -20,6 +21,15 @@ func _ready():
 	var temp_pos := goals[goal_index].global_position
 	ball.global_position = Vector2(temp_pos.x, temp_pos.y)
 	_move_to_next_goal()
+	
+	SignalBus.updated_ease.connect(_on_updated_ease)
+	SignalBus.updated_trans.connect(_on_updated_trans)
+
+func _on_updated_ease(i : int):
+	selected_ease = i as Tween.EaseType
+
+func _on_updated_trans(i : int):
+	selected_transition = i as Tween.TransitionType
 
 func _move_to_next_goal():
 	goal_index += 1
@@ -35,20 +45,23 @@ func _create_tween():
 	
 	# criamos um tween antes de tudo
 	tween = create_tween()
-	# agora vamos animar uma "propriedade" da bola, essa sendo a posição global dela.
+	
+	# Vamos definir a transição e ease deste tween.
+	tween.set_trans(selected_transition)
+	tween.set_ease(selected_ease)
+	
+	# Agora vamos animar uma "propriedade" da bola, essa sendo a posição global dela.
+	# Ela tera a transição e ease settados mais recentemente.
 	tween.tween_property(
 		ball, "global_position", # Aqui a gente referencia o caminho para a variavel.
 		goals[goal_index].global_position, # Aqui é o valor final do nosso tween.
 		tween_duration # Duração do nosso tween em segundos.
 		)
-	# Vamos definir a transição e ease deste tween.
-	tween.set_trans(selected_transition)
-	tween.set_ease(selected_ease)
 	
-	# por que usamos o await e não o connect?
+	await tween.finished
+	# Por que usamos o await e não o connect?
 	#   É devido que, ao darmos .kill() em um tween, ele é desreferenciado na memória. Por causa
-	# disso, o connect só da certo por 1 ciclo de tween, sendo necessário que constantemente 
+	# disso, o connect só da certo por 1 ciclo de tween, sendo necessário constantemente 
 	# conecta-lo e desconecta-lo para não termos o famoso "memory leak".
 	#   O await já faz isso pra gente, após ser usado já é limpo da memória automaticamente.
-	await tween.finished
 	_move_to_next_goal()
