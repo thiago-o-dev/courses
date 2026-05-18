@@ -9,6 +9,9 @@ class_name BallAnimator
 @export var tween_duration : float = 1
 var goal_index = 0
 
+var tween_elapsed : float = 0
+var curr_progress : float = 0
+
 # Aqui declaramos o tween que vamos usar para animar a bola.
 var tween : Tween
 # obs: podemos fazer mais de 1 animação por vez com ele, 
@@ -39,6 +42,10 @@ func _move_to_next_goal():
 	_create_tween()
 
 func _create_tween():
+	# resetamos umas variaveis q usamos para o renderizdor de gráficos
+	tween_elapsed = 0.0
+	curr_progress = 0.0
+	
 	if tween:
 		# Sempre finalizamos o tween caso ele esteja ativo (boa prática)
 		tween.kill()
@@ -65,3 +72,9 @@ func _create_tween():
 	# conecta-lo e desconecta-lo para não termos o famoso "memory leak".
 	#   O await já faz isso pra gente, após ser usado já é limpo da memória automaticamente.
 	_move_to_next_goal()
+
+func _physics_process(delta):
+	if tween:
+		tween_elapsed += delta
+		curr_progress = clamp(tween_elapsed / tween_duration, 0.0, 1.0)
+		SignalBus.update_progress(curr_progress)

@@ -268,4 +268,3 @@ grow_vertical = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_tefeu")
 script = ExtResource("5_tbgi4")
-line_color = Color(1.347661e-06, 0.63253254, 0.9092754, 1)
