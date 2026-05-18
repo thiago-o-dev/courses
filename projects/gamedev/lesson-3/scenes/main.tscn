@@ -51,6 +51,7 @@ grow_vertical = 2
 script = ExtResource("3_jyhfs")
 ball = NodePath("Ball")
 goals = [NodePath("Left"), NodePath("Right")]
+tween_duration = 4.0
 
 [node name="Left" type="TextureRect" parent="BallAnimation" unique_id=1059396487]
 layout_mode = 1
