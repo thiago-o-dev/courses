@@ -31,5 +31,26 @@ class: invert
 
 ---
 
+# Da onde vem o termo **Tween**?
+- ### O termo tween veio do processo de in-be**tween**ning, que é **preencher desenhos entre duas poses definidas**.
+
+* ### Essa nomenclatura já era usada em **1920** pela **Disney** e os estudios **Fleischer**, sendo assim um padrão global em qualquer software hoje em dia.
+
+---
+# <!--fit-->Atualmente, Tween **são calculados digitalmente**.
+
+### <!--fit-->Um dos exemplos mais memoráveis é a **Adobe Flash**
+![width:500px](../img/Tweening.gif)
+
+---
+
+![bg left](../img/Tweening.gif)
+### Temos as **seguintes propriedades** modificadas por tweens:
+* #### **Posição** da bola 
+* #### **Cor** da bola
+* #### **Escala** da bola
+
+
+---
 # Aula baseada no video
 ### https://www.youtube.com/watch?v=dQw4w9WgXcQ
