@@ -24,7 +24,7 @@ class: invert
 - O que são tweens;
 - Matemática gráfica;
 - Eases e transitions;
-- Formulas comuns; (dot product, cross product, etc)
+- Formulas comuns; (bezier curves, dot product, cross product, etc)
 - Aplicaçoes interessantes;
 - O que sao shaders;
 - Entendendo a GPU e a CPU.
