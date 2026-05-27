@@ -37,6 +37,10 @@ class: invert
 * ### Essa nomenclatura já era usada em **1920** pela **Disney** e os estudios **Fleischer**, sendo assim um padrão global em qualquer software hoje em dia.
 
 ---
+
+![cover](https://github.com/user-attachments/assets/9fbd87bc-3337-4f6b-a1e3-1d7da7469293)
+
+---
 # <!--fit-->Atualmente, Tween **são calculados digitalmente**.
 
 ### <!--fit-->Um dos exemplos mais memoráveis é a **Adobe Flash**
@@ -50,6 +54,11 @@ class: invert
 * #### **Cor** da bola
 * #### **Escala** da bola
 
+---
+Abrir o projeto lá
+
+---
+Formulas comuns na matemática visual
 
 ---
 # Aula baseada no video
