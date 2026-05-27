@@ -38,7 +38,7 @@ class: invert
 
 ---
 
-![cover](https://github.com/user-attachments/assets/9fbd87bc-3337-4f6b-a1e3-1d7da7469293)
+![bg cover](https://github.com/user-attachments/assets/9fbd87bc-3337-4f6b-a1e3-1d7da7469293)
 
 ---
 # <!--fit-->Atualmente, Tween **são calculados digitalmente**.
