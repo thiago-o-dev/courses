@@ -38,8 +38,14 @@ func calculate_dot_products():
 		# direção até o mouse
 		var to_target := (target_position - global_position - size/2).normalized()
 		
-		# dot product entre as duas direções
-		var dot := dir.dot(to_target)
+		# dot products entre as duas direções
+		var dot : float = dir.dot(to_target)
+		#var dot : float = -dir.dot(to_target)
+		#var dot : float = abs(dir.dot(to_target))
+		#var dot : float = dir.dot(to_target.rotated(deg_to_rad(90)))
+		#var dot : float = abs(dir.dot(to_target.rotated(deg_to_rad(90))))
+		#var dot : float = pow(dir.dot(to_target), 4.0)
+		#var dot : float = pow(max(dir.dot(to_target), 0.0), 4.0)
 		
 		points_len.append(dot)
 
