@@ -94,10 +94,19 @@ class: invert
 
 ---
 ![bg](../img/fragment_shader_example.png)
-# <!--fit-->SHADERS
+### <!--fit-->SHADERS
 ---
 
 # Shaders alteram a tela seguindo o código, isso ocorre através da placa grafica do computador, a GPU que é **extremamente veloz**.
 
 ---
 
+# Cada tipo de shader tem funções de processamento. 
+# Hoje vamos ver um pouco sobre o **Shader CanvasItem, que é utilizado no 2D.**
+
+---
+
+# Ele tem as seguintes funções:
+* ## **vertex()**: Roda uma vez por vertice. Manipula **forma, posição, escala de um CanvasItem** (tipo uma grama balançar no vento).
+* ## **fragment()**:  Roda para cada pixel. Aplica **efeitos de cor, distorções e muito mais** (tipo colocar uma borda preta ou o efeito de onda na água)
+* ## **light()**: Roda pra cada pixel afetado por luz. Te deixa mudar como esse pixel **vai responder as interações**.
