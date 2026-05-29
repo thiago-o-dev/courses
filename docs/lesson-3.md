@@ -52,7 +52,6 @@ class: invert
 
 ---
 ![bg contain](../img/Tweening.gif)
----
 
 ---
 
@@ -81,7 +80,14 @@ class: invert
 ## <!--fit--> https://thiago-o-dev.github.io/courses/
 
 ---
-Explicar as curvas de bezier
+# Quando vamos pensar em gráficos, estamos repletos de **funções aplicadas criativamente** como:
+* ## Curvas de bezier: Para **calcularmos trajetórias** sobre o efeito de algum ponto de controle;
+* ## Produto escalar (Dot Product): Calcula a **relação entre dois angulos**;
+* ## Produto Vetorial (Cross Product): Produz um **novo vetor** apartir de outros dois vetores.
+
+---
+
+# <!--fit-->Vamos ver alguns exemplos
 
 ---
 ![bg](../img/fragment_shader_example.png)
@@ -90,5 +96,8 @@ Explicar as curvas de bezier
 ![bg](../img/fragment_shader_example.png)
 # <!--fit-->SHADERS
 ---
-# Aula baseada no video
-### https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+# Shaders alteram a tela seguindo o código, isso ocorre através da placa grafica do computador, a GPU que é **extremamente veloz**.
+
+---
+
