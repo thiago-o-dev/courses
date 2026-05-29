@@ -8,6 +8,7 @@ class_name BallAnimator
 @export_category("Controls")
 @export var tween_duration : float = 1
 var goal_index = 0
+var previous_goal = 0
 
 var tween_elapsed : float = 0
 var curr_progress : float = 0
@@ -30,11 +31,14 @@ func _ready():
 
 func _on_updated_ease(i : int):
 	selected_ease = i as Tween.EaseType
+	_create_tween()
 
 func _on_updated_trans(i : int):
 	selected_transition = i as Tween.TransitionType
+	_create_tween()
 
 func _move_to_next_goal():
+	previous_goal = goal_index
 	goal_index += 1
 	if goal_index >= len_goals:
 		goal_index = 0
@@ -49,6 +53,9 @@ func _create_tween():
 	if tween:
 		# Sempre finalizamos o tween caso ele esteja ativo (boa prática)
 		tween.kill()
+	
+	# Resetamos a posição da bola (isso daq é pq eu quero msm)
+	ball.global_position = goals[previous_goal].global_position
 	
 	# criamos um tween antes de tudo
 	tween = create_tween()
