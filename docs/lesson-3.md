@@ -32,19 +32,27 @@ class: invert
 ---
 
 # Da onde vem o termo **Tween**?
-- ### O termo tween veio do processo de in-be**tween**ning, que é **preencher desenhos entre duas poses definidas**.
+- ### O termo tween veio do processo de in-be**tween**ning, que é **preencher desenhos entre duas poses definidas** de uma animação.
 
-* ### Essa nomenclatura já era usada em **1920** pela **Disney** e os estudios **Fleischer**, sendo assim um padrão global em qualquer software hoje em dia.
+* ### Essa nomenclatura já era usada em **1920** pelos estudios **Disney** e  **Fleischer**, sendo assim um padrão global em qualquer software hoje em dia.
+
+* ### Pavimentam assim um **método simples** de pensar no **movimento**.
 
 ---
 
 ![bg contain](https://github.com/user-attachments/assets/9fbd87bc-3337-4f6b-a1e3-1d7da7469293)
 
 ---
-# <!--fit-->Atualmente, Tween **são calculados digitalmente**.
+# <!--fit-->Atualmente, Tweens **são calculados digitalmente**.
 
 ### <!--fit-->Um dos exemplos mais memoráveis é a **Adobe Flash**
-![width:500px](../img/Tweening.gif)
+
+* ## Isso tudo que veremos é feito com **matemática e curvas de bezier**, se quiser, você pode criar **seu próprio sistema de tweens**!
+![bg brightness:0.3](../img/games_made_with_flash.jpg)
+
+---
+![bg contain](../img/Tweening.gif)
+---
 
 ---
 
@@ -55,11 +63,32 @@ class: invert
 * #### **Escala** da bola
 
 ---
-Abrir o projeto lá
+
+# Nós controlamos o movimento **entre** essas poses por meio das:
+* # **transições (transition)** e;
+* # **amenizamentos (ease)**.
 
 ---
-Formulas comuns na matemática visual
 
+# <!--fit-->Vamos ver isso na prática dentro do **Godot**.
+
+---
+
+# Aulas e códigos **disponíveis** no github: 
+## <!--fit--> https://github.com/thiago-o-dev
+- (me sigam lá)
+# Site buildado:
+## <!--fit--> https://thiago-o-dev.github.io/courses/
+
+---
+Explicar as curvas de bezier
+
+---
+![bg](../img/fragment_shader_example.png)
+
+---
+![bg](../img/fragment_shader_example.png)
+# <!--fit-->SHADERS
 ---
 # Aula baseada no video
 ### https://www.youtube.com/watch?v=dQw4w9WgXcQ
