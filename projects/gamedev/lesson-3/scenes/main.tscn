@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://btg8o7iyij24c" path="res://src/implementations/trasition_selector.gd" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://bolr26oaxv8gj" path="res://src/implementations/ease_selector.gd" id="2_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://dltaurr30m8t3" path="res://assets/small_x.svg" id="2_tefeu"]
 [ext_resource type="Script" uid="uid://dh5aqbekvgmmb" path="res://src/implementations/ball_animation.gd" id="3_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="4_tbgi4"]
 [ext_resource type="Script" uid="uid://clbsdabdoy66k" path="res://src/implementations/graph_renderer.gd" id="5_tbgi4"]
@@ -67,7 +68,7 @@ offset_bottom = 64.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
-texture = ExtResource("4_tbgi4")
+texture = ExtResource("2_tefeu")
 stretch_mode = 3
 
 [node name="Right" type="TextureRect" parent="BallAnimation" unique_id=794656903]
@@ -84,11 +85,10 @@ offset_bottom = 64.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
-texture = ExtResource("4_tbgi4")
+texture = ExtResource("2_tefeu")
 stretch_mode = 3
 
 [node name="Ball" type="TextureRect" parent="BallAnimation" unique_id=659418161]
-modulate = Color(1, 0.28627452, 1, 1)
 layout_mode = 0
 offset_left = 224.0
 offset_top = 260.0
