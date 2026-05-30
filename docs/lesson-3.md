@@ -110,3 +110,9 @@ class: invert
 * ## **vertex()**: Roda uma vez por vertice. Manipula **forma, posição, escala de um CanvasItem** (tipo uma grama balançar no vento).
 * ## **fragment()**:  Roda para cada pixel. Aplica **efeitos de cor, distorções e muito mais** (tipo colocar uma borda preta ou o efeito de onda na água)
 * ## **light()**: Roda pra cada pixel afetado por luz. Te deixa mudar como esse pixel **vai responder as interações**.
+
+---
+
+# QR CODE DO FORMULARIO GDD
+
+![bg right](https://github.com/user-attachments/assets/c9d882a0-aacf-4e79-a8c8-10cf53aaccad)
