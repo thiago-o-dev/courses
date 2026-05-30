@@ -115,4 +115,6 @@ class: invert
 
 # QR CODE DO FORMULARIO GDD
 
+https://forms.gle/mX7qyUnS5UdBuxARA
+
 ![bg right](https://github.com/user-attachments/assets/c9d882a0-aacf-4e79-a8c8-10cf53aaccad)
