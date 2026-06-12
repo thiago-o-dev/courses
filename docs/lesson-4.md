@@ -35,3 +35,17 @@ class: invert
 ---
 
 ###### ;)
+
+---
+
+# O que é realmente importante ao desenvolver um jogo?
+* é importante considerar o tamanho da equipe;
+* e o escopo do projeto.
+
+---
+
+# <!--fit--> O que vem depois nao te bloqueia de criar o jogo
+
+---
+
+### Coisas como **genero, ideia, diversao, reproducibilidade e gameloop** vão te fazer criar **um jogo melhor**, mas nao te impedir de finalizar ou chegar em algum resultado.
