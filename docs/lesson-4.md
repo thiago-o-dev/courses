@@ -95,4 +95,8 @@ class: invert
 
 ---
 
-# Todas essas ideias poderiam ser **produzidas separadas e reutilizadas**, no final você ao invés de ter **um jogo**, teria **QUATRO**!
+# Todas essas ideias poderiam ser **produzidas separadas e reutilizadas**, no final você ao invés de ter **um jogo**, terá **QUATRO**!
+
+---
+
+# Com todas essas ideias, onde podemos joga-las?
