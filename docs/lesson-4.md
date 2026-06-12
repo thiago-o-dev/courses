@@ -63,14 +63,14 @@ class: invert
 
 ---
 
-# SPACE EXPLORER 3099
-* ### O jogo será datado em 3099
-* ### Terá planetas procedurais
-* ### Inimigos gerados artificialmente como spore
-* ### Objetivo de dominar a galáxia
-* ### Conteudo do jogo: 450 horas
-* time: 2 pessoas e 1 pizza
-* lançamento: terça q vem
+# SPACE EXPLORER **3099**
+* ### O jogo será datado em **3099**
+* ### Terá planetas **procedurais**
+* ### Inimigos gerados **artificialmente** como **spore**
+* ### Objetivo de dominar a **galáxia**
+* ### Conteudo do jogo: **450 horas**
+* time: **2 pessoas e 1 pizza**
+* lançamento: **terça q vem**
 
 ---
 
@@ -78,5 +78,21 @@ class: invert
 
 ---
 
-# Que foram quebrados em muitos sistemas, que tiveram seus próprios jogos.
-## Mas alguns foram feitos por doidos, como stardew valley, nisso, o jogo demorou uma quantidade absurda pra sair.
+# Que foram **quebrados em muitos sistemas**, que tiveram **seus próprios jogos**.
+## Mas alguns foram feitos por doidos, como **stardew valley**, nisso, o jogo demorou **uma quantidade absurda pra sair**.
+
+---
+
+## Vamos pensar que você **quer mesmo** criar o
+# <!--fit--> SPACE EXPLORER **3099**
+
+---
+
+# É mais víavel quebrar o projeto em pequenos jogos que vão validar as partes do jogo.
+* ## Sistema de **planetas procedural**
+* ## Sistema de **inimigos como spore**
+* ## Sistema de **guerra interplanetaria**
+
+---
+
+# Todas essas ideias poderiam ser **produzidas separadas e reutilizadas**, no final você ao invés de ter **um jogo**, teria **QUATRO**!
