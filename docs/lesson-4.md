@@ -29,15 +29,6 @@ class: invert
 
 ---
 
-# Aula baseada na video-aula
-### https://youtu.be/dQw4w9WgXcQ
-
----
-
-###### ;)
-
----
-
 # O que é realmente importante ao desenvolver um jogo?
 * # É importante considerar o tamanho da equipe;
 * # E o escopo do projeto.
@@ -99,4 +90,5 @@ class: invert
 
 ---
 
-# Com todas essas ideias, onde podemos joga-las?
+# Com todas essas ideias, onde podemos hospeda-las?
+- https://itch.io/
