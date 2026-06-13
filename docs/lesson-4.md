@@ -93,5 +93,9 @@ class: invert
 https://docs.google.com/document/d/1AeTg49jPP5EtxXM_UkO-OnRpA03-UeKeER3h2mQgwbw/edit?usp=drivesdk
 
 ---
+
+https://docs.google.com/document/d/1MIOPQTAPUKJmu6OyrYIVL9fcZVhGxHDL121AscsfsXQ/edit?usp=drivesdk
+
+---
 # Com todas essas ideias, onde podemos hospeda-las?
 - https://itch.io/
