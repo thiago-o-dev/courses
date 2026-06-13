@@ -29,13 +29,13 @@ class: invert
 
 ---
 
-# O que é realmente importante ao desenvolver um jogo?
-* # É importante considerar o tamanho da equipe;
-* # E o escopo do projeto.
+# O que é **realmente importante** ao desenvolver um jogo?
+* # É importante **considerar o tamanho** da equipe;
+* # E o **escopo do projeto**.
 
 ---
 
-# <!--fit--> O que vem depois **nao te bloqueia de criar o jogo**
+# <!--fit--> O que vem depois **não te bloqueia de criar o jogo**.
 
 ---
 
